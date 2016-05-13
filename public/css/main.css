@@ -69,7 +69,7 @@ button[type=button]:hover {
 }
 
 #hero_container {
-  padding: 150px;
+  padding: 150px 150px 0px 150px;
 }
 
 #hero_container h1 {
@@ -240,6 +240,10 @@ div[data-maitre-content] {
 
 .show {
   display: block !important;
+}
+
+body > #maitre-widget-container {
+  display: none;
 }
 
 .maitre-field {
