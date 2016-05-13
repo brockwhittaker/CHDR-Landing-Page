@@ -278,8 +278,8 @@ input[type=submit]:hover {
   background-image: url(../assets/twitter-icon.png);
 }
 
-#linkedin {
-  background-image: url(../assets/linkedin-icon.png);
+#email {
+  background-image: url(../assets/email-icon.png);
 }
 
 footer {
