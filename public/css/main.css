@@ -204,14 +204,12 @@ button[type=button]:hover {
 }
 
 input[type=email],
-input[type=submit] {
+button[type=submit] {
   position: relative;
   display: inline-block;
 
   padding: 10px;
   margin: 20px 10px;
-  width: 35%;
-  max-width: 350px;
 
   font-size: 1.2em;
   font-weight: 300;
@@ -234,6 +232,25 @@ input[type=email]:hover {
   background-color: #fff;
 }
 
+div[data-maitre-content] {
+  background-color: #fff;
+  padding: 20px;
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
+.maitre-field {
+  display: inline-block;
+  max-width: 350px;
+}
+
+form[data-maitre-form] > a {
+  display: none;
+}
+
 #register_container h4 {
   font-size: 0.8em;
   font-weight: 300;
@@ -242,7 +259,7 @@ input[type=email]:hover {
   color: #2e2143;
 }
 
-input[type=submit]:hover {
+button[type=submit]:hover {
   background-color: #2e2143;
   color: #fff;
 }

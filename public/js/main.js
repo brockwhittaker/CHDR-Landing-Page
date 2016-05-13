@@ -20,7 +20,7 @@
   });
 
   $("#down_arrow").click(function () {
-    smoothScroll.animateScroll(window.innerHeight);    
+    smoothScroll.animateScroll(window.innerHeight);
   });
 
 
