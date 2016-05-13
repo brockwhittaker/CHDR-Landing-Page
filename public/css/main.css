@@ -1,0 +1,6 @@
+/* orange = #ff4612 */
+
+button[type=button] {
+  border: 2px solid #ff4612;
+  border-radius: 5px;
+}
