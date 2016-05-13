@@ -1,6 +1,507 @@
-/* orange = #ff4612 */
+/* #f16025 = #f16025 */
+/* purple = #2e2143 */
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,300italic,400italic,700,900);
+
+* {
+  font-family: "Lato", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+body {
+  margin: 0;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 
 button[type=button] {
-  border: 2px solid #ff4612;
+  margin: 20px;
+
+  color: #f16025;
+  background-color: transparent;
+
+  font-size: 1em;
+  text-transform: uppercase;
+
+  border: 2px solid #f16025;
   border-radius: 5px;
+  padding: 8px 30px;
+
+  transition: all 0.2s ease;
+}
+
+button[type=button]:hover {
+  background-color: #f16025;
+  color: #fff;
+}
+
+#sign_up {
+  float: right;
+}
+
+#chdr_logo {
+  margin: 20px;
+
+  width: 170px;
+  height: calc(170px * (32 / 142));
+
+  background-image: url(../assets/logo_hires.png);
+  background-size: auto 150%;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  float: left;
+}
+
+/* object-oriented css */
+.clear-float {
+  clear: both;
+}
+
+#hero_container {
+  padding: 150px;
+}
+
+#hero_container h1 {
+  margin: 0 auto;
+
+  font-size: 3em;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: center;
+
+  letter-spacing: 0.05em;
+
+  color: #f16025;
+}
+
+#hero_container h2 {
+  margin-top: 80px;
+
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #2e2143;
+}
+
+#city_container {
+  width: 100vw;
+  height: calc(100vw * (941 / 1180));
+
+  background-image: url(../assets/City.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#device_group {
+  position: relative;
+
+  top: 8vw;
+  left: -15vw;
+
+  width: 40vw;
+  height: 22vw;
+
+  margin: 0 auto;
+
+  background-image: url(../assets/device-group.png);
+  background-size: 100% 100%;
+
+  z-index: -1;
+}
+
+#down_arrow {
+  margin: 50px auto;
+
+  width: 50px;
+  height: 20px;
+
+  background-image: url(../assets/down-arrow.png);
+  background-size: 100% 100%;
+}
+
+#city_container h2 {
+  display: block;
+  padding: 20px;
+
+  font-size: 2em;
+
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: #fff;
+}
+
+#city_container p {
+  margin: 0 auto;
+  padding: 20px;
+
+  width: 50%;
+
+  text-align: center;
+  line-height: 1.8;
+
+  color: #fff;
+}
+
+#outer_container {
+  position: relative;
+
+  margin-top: -150px;
+  padding: 150px;
+
+  background-color: rgba(230,230,230,0.5);
+
+  border-radius: 1000px;
+
+  overflow-y: hidden;
+}
+
+#register_container {
+  position: relative;
+
+  text-align: center;
+
+  border-radius: 100vw;
+}
+
+#register_container h2 {
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #f16025;
+}
+
+#register_container h2.pad {
+  padding-top: 100px !important;
+}
+
+#register_container h3,
+#register_container p {
+  margin-top: 60px;
+
+  font-weight: 300;
+  text-align: center;
+
+  color: #2e2143;
+}
+
+#register_container p {
+  margin: 0 auto;
+  width: 70%;
+}
+
+input[type=email],
+input[type=submit] {
+  position: relative;
+  display: inline-block;
+
+  padding: 10px;
+  margin: 20px 10px;
+  width: 35%;
+  max-width: 350px;
+
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: center;
+
+  color: #2e2143;
+  background-color: transparent;
+
+  border: 1px solid #2e2143;
+  border-radius: 5px;
+
+  outline: none;
+
+  transition: all 0.2s ease;
+
+  z-index: 2;
+}
+
+input[type=email]:hover {
+  background-color: #fff;
+}
+
+#register_container h4 {
+  font-size: 0.8em;
+  font-weight: 300;
+  text-align: center;
+
+  color: #2e2143;
+}
+
+input[type=submit]:hover {
+  background-color: #2e2143;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  #hero_container {
+    padding: 150px 50px;
+  }
+
+  #city_container p {
+    width: 80%;
+  }
+}
+
+/* -- solar system -- */
+#solar_system {
+  position: relative;
+  margin: 0 auto;
+
+  text-align: center;
+
+  width: 90vw;
+  padding: 300px 0px;
+}
+
+#solar_system p {
+  font-size: 1.5em;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #f16025;
+}
+
+#laptop p {
+  width: 180px;
+  font-size: 0.8em;
+  color: #2e2143;
+}
+
+#laptop button {
+  font-weight: 300;
+  text-transform: none;
+
+  color: #fff;
+  background-color: #2e2143;
+
+  border: none;
+}
+
+#laptop button:hover {
+  background-color: #2e2143;
+}
+
+
+#solar_system #laptop {
+  display: inline-block;
+  padding: 80px 80px;
+
+  background-image: url(../assets/laptop.png);
+  background-size: 100% auto;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.amzn-orbit,
+.aapl-orbit,
+.toms-orbit,
+.jcrew-orbit,
+.amc-orbit {
+  z-index: -1;
+}
+
+#amazon_logo {
+  background-image: url(../assets/amazon.png);
+  background-size: 80% auto;
+}
+
+#jcrew_logo {
+  background-image: url(../assets/jcrew.png);
+  background-size: 80% auto;
+}
+
+#amc_logo {
+  background-image: url(../assets/AMC.png);
+  background-size: 80% auto;
+}
+
+#toms_logo {
+  background-image: url(../assets/toms.png);
+  background-size: 50% auto;
+}
+
+#aapl_logo {
+  background-image: url(../assets/apple.png);
+  background-size: 50% auto;
+}
+
+#solar_system .aapl-orbit {
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+
+    background-color: #2e2143;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    -webkit-animation: aaplOrbit 10s linear infinite; /* Chrome, Safari 5 */
+    animation: aaplOrbit 10s linear infinite; /* Chrome, Firefox 16+ */
+}
+
+@-webkit-keyframes aaplOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(410px) rotate(0deg); }
+    to   { -webkit-transform: rotate(160deg) translateX(410px) rotate(-360deg); }
+}
+
+@keyframes aaplOrbit {
+    from { transform: rotate(300deg) translateX(280px) rotate(-300deg); }
+    to   { transform: rotate(660deg) translateX(280px) rotate(-660deg); }
+}
+
+#solar_system .jcrew-orbit {
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+
+    background-color: #2e2143;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    -webkit-animation: jcrewOrbit 10s linear infinite; /* Chrome, Safari 5 */
+    animation: jcrewOrbit 10s linear infinite; /* Chrome, Firefox 16+ */
+}
+
+#solar_system .ring {
+  position: absolute;
+
+  top: calc(50% - 250px);
+  left: calc(50% - 250px);
+
+  z-index: -2;
+
+  width: 500px;
+  height: 500px;
+
+  border: 2px solid #f16025;
+  border-radius: 250px;
+}
+
+.ring-2 {
+  top: calc(50% - 380px) !important;
+  left: calc(50% - 380px) !important;
+
+  width: 760px !important;
+  height: 760px !important;
+
+  border-radius: 380px !important;
+}
+
+.ring-3 {
+  top: calc(50% - 510px) !important;
+  left: calc(50% - 510px) !important;
+
+  width: 1020px !important;
+  height: 1020px !important;
+
+  border-radius: 510px !important;
+}
+
+@-webkit-keyframes jcrewOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(510px) rotate(0deg); }
+    to   { -webkit-transform: rotate(160deg) translateX(510px) rotate(-360deg); }
+}
+
+@keyframes jcrewOrbit {
+    from { transform: rotate(200deg) translateX(510px) rotate(-200deg); }
+    to   { transform: rotate(560deg) translateX(510px) rotate(-560deg); }
+}
+
+#solar_system .amc-orbit {
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+
+    background-color: #2e2143;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    -webkit-animation: amcOrbit 10s linear infinite; /* Chrome, Safari 5 */
+    animation: amcOrbit 10s linear infinite; /* Chrome, Firefox 16+ */
+}
+
+@-webkit-keyframes amcOrbit {
+  from { transform: rotate(100deg) translateX(380px) rotate(0deg); }
+  to   { transform: rotate(460deg) translateX(380px) rotate(-460deg); }
+}
+
+@keyframes amcOrbit {
+  from { transform: rotate(100deg) translateX(380px) rotate(-100deg); }
+  to   { transform: rotate(460deg) translateX(380px) rotate(-460deg); }
+}
+
+#solar_system .toms-orbit {
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+
+    background-color: #2e2143;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    -webkit-animation: tomsOrbit 10s linear infinite; /* Chrome, Safari 5 */
+    animation: tomsOrbit 10s linear infinite; /* Chrome, Firefox 16+ */
+}
+
+@-webkit-keyframes tomsOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(380px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(380px) rotate(-360deg); }
+}
+
+@keyframes tomsOrbit {
+    from { transform: rotate(0deg) translateX(380px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(380px) rotate(-360deg); }
+}
+
+#solar_system .amzn-orbit {
+    position: absolute;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+
+    background-color: #2e2143;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    -webkit-animation: amznOrbit 10s linear infinite; /* Chrome, Safari 5 */
+    animation: amznOrbit 10s linear infinite; /* Chrome, Firefox 16+ */
+}
+
+@-webkit-keyframes amznOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(250px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(250px) rotate(-360deg); }
+}
+
+@keyframes amznOrbit {
+    from { transform: rotate(0deg) translateX(250px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(250px) rotate(-360deg); }
 }
